@@ -1,0 +1,16 @@
+<html>
+
+<head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    let socket = io();
+    let sendUserId = (userId) => {
+      socket.emit('UserId', { userId });
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
